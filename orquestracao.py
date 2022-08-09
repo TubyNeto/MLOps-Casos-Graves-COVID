@@ -130,7 +130,7 @@ def train_models(dataset):
 @flow(task_runner=SequentialTaskRunner())
 def main():
     mlflow.set_tracking_uri("sqlite:///mlflow.db")
-    mlflow.set_experiment("nyc-taxi-experiment")
+    mlflow.set_experiment("projeto-mlops-experiment")
     dataset = data_preparation()
     train_models(dataset)
 
